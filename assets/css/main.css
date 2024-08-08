@@ -2810,6 +2810,24 @@ section {
   color: var(--color-default);
   background: rgb(157,202,212);
   background: linear-gradient(90deg, rgba(157,202,212,1) 0%, rgba(255,255,255,1) 50%, rgba(157,202,212,1) 100%);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .faixas{
+  width: 50px;
+  height: max-content;
+  z-index: 10;
+  margin-right: 400px;
+}
+
+.footer .foto{
+  width: 50%;
+  height: max-content;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
 }
 
 .footer .row{
