@@ -2820,6 +2820,7 @@ section {
 display: flex;
 flex-direction: column;
 z-index: 10;
+margin-right: 300px;
 }
 
 .footer .faixas .box-rodape-lightblue {
@@ -2861,6 +2862,7 @@ z-index: 10;
   display: flex;
   flex-direction: column;
   margin-right: 20px;
+  margin-left: 20px;
 }
 
 .footer .rodape-sesson img{
@@ -2881,10 +2883,12 @@ z-index: 10;
   margin: 0;
 }
 
-.footer .rodape-sesson-map .footer-links li h4{
+.footer .rodape-sesson-map .footer-links li a h4{
   font-family: var(--font-terciary);
+  color: var(--color-secondary);
+  text-transform: uppercase;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 8px;
   padding: no;
   display: flex;
   align-items: center;
