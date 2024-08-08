@@ -3,6 +3,18 @@
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Montserrat", sans-serif;
   --font-secondary: "Poppins", sans-serif;
+  --font-terciary: "cannonSCblack", sans-serif;
+  --font-quaternary: "cannonSC", sans-serif;
+}
+
+@font-face {
+  font-family:'cannonSCblack';
+  src: url(../fontes/cannon-sc-black.otf);
+}
+
+@font-face {
+  font-family:'cannonSC';
+  src: url(../fontes/cannon-sc-regular.otf);
 }
 
 /* Colors */
@@ -1023,6 +1035,13 @@ section {
 .testimonials .testimonial-item h4 {
   font-size: 14px;
   color: #999;
+  margin: 10px 0 5px 0;
+}
+
+.testimonials .testimonial-item a {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--color-default);
   margin: 0;
 }
 
@@ -1907,8 +1926,7 @@ section {
   margin: 0;
   font-size: 28px;
   font-weight: 700;
-  text-transform: uppercase;
-  font-family: var(--heading-font);
+  font-family: var(--font-terciary);
 }
 
 /*--------------------------------------------------------------
@@ -1979,11 +1997,31 @@ section {
   color: #fff;
 }
 
-.herobg{
+.hero .box-azul{
+  width: 33%;
+  padding: 15px;
+  background: blue;
+  z-index: 0;
+}
+
+.hero .box-amarelo{
+  width: 33%;
+  padding: 15px;
+  background: yellow;
+  z-index: 0;
+}
+
+.hero .box-verde{
+  width: 33%;
+  padding: 15px;
+  background: green;
+  z-index: 0;
+}
+
+.herobg {
   /* background-image: url('../img/herobg.png'); */
   background: rgb(157,202,212);
   background: linear-gradient(90deg, rgba(157,202,212,1) 0%, rgba(255,255,255,1) 50%, rgba(157,202,212,1) 100%);
-
 }
 
 @media (max-width: 640px) {
@@ -2119,6 +2157,11 @@ section {
   padding-top: 20px;
 }
 
+.carrosel img {
+  width: max-content;
+  opacity: 80%;
+}
+
 .carrosel h2 {
   margin-bottom: 30px;
   font-size: 48px;
@@ -2142,7 +2185,7 @@ section {
 
 .carrosel .carousel-control-next-icon,
 .carrosel .carousel-control-prev-icon {
-  color: var(--color-secondary);
+  color: var(--color-primary);
   font-size: 48px;
   line-height: 1;
   width: auto;
@@ -2764,7 +2807,6 @@ section {
 .footer {
   font-size: 14px;
   /* background-color: var(--color-secondary); */
-  padding: 50px 0;
   color: var(--color-default);
   background: rgb(157,202,212);
   background: linear-gradient(90deg, rgba(157,202,212,1) 0%, rgba(255,255,255,1) 50%, rgba(157,202,212,1) 100%);
@@ -2772,8 +2814,9 @@ section {
 
 .footer .row{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: end;
+  margin-top: 15px;
  }
 
 .footer .footer-info{
@@ -2790,7 +2833,12 @@ section {
 }
 
 .footer img {
+  width: 50%;
+}
+
+.footer-image img {
   width: 100%;
+  height: auto;
 }
 
 .footer .footer-info .logo img {
@@ -2819,7 +2867,7 @@ section {
 
 .footer .social-links{
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-direction: row;
 }
 
@@ -2827,14 +2875,17 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid var(--color-default);
-  font-size: 16px;
-  color: var(--color-default);
-  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 20%;
+  margin-right: 5px;
   transition: 0.3s;
+  background-color: var(--color-secondary);
+}
+
+.footer .social-links a i {
+  font-size: 12px;
+  color: var(--color-primary);
 }
 
 .footer .social-links a:hover {
@@ -2847,10 +2898,6 @@ section {
   font-weight: bold;
   position: relative;
   padding-bottom: 2px;
-}
-
-.footer .footer-links {
-  margin-bottom: 30px;
 }
 
 .footer .footer-links ul {
@@ -2876,6 +2923,10 @@ section {
   padding-top: 0;
 }
 
+.footer .footer-contact{
+  font-family: var(--font-quaternary);
+}
+
 .footer .footer-contact a {
   color: var(--color-default);
 }
@@ -2896,12 +2947,17 @@ section {
 }
 
 .footer .footer-contact img {
-  width: 50%;
+  width: 40%;
   margin-top: 5px;
 }
 
 .footer .copyright {
   text-align: center;
+  font-size: 10px;
+}
+
+.footer .copyright a {
+  color: var(--color-default);
 }
 
 .footer .credits {
