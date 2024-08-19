@@ -2813,14 +2813,13 @@ section {
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 .footer .faixas{
 display: flex;
 flex-direction: column;
-z-index: 10;
-margin-right: 300px;
 }
 
 .footer .faixas .box-rodape-lightblue {
@@ -2849,18 +2848,21 @@ margin-right: 300px;
 
 .footer .foto{
   height: max-content;
-  position: absolute;
+  position: relative;
   bottom: 0;
-  z-index: 0;
+  margin-right: 300px;
 }
 
 .footer .foto img{
   width: 300px;
+  position: absolute;
+  top: -66px;
 }
 
 .footer .rodape-sesson{
   display: flex;
   flex-direction: column;
+  flex-grow: 2;
   margin-right: 20px;
   margin-left: 20px;
 }
@@ -2874,7 +2876,7 @@ margin-right: 300px;
 .footer .rodape-sesson-map{
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: space-between;
 }
 
 .footer .rodape-sesson-map .footer-links ul{
@@ -2905,9 +2907,17 @@ margin-right: 300px;
   width: 50px;
 }
 
+.footer .rodape-sesson-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-grow: 1;
+}
+
 .footer .copyright {
   font-family: var(--font-quaternary);
   font-size: 8px;
+  margin: 10px 0 10px 0;
 }
 
 .footer .copyright a {
