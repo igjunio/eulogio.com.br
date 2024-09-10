@@ -114,8 +114,8 @@ section {
 .breadcrumbs .page-header h2 {
   font-size: 56px;
   font-weight: 500;
-  color: #fff;
-  font-family: var(--font-secondary);
+  color: var(--color-secondary);
+  font-family: var(--font-terciary);
 }
 
 .breadcrumbs .page-header p {
@@ -127,7 +127,8 @@ section {
   padding: 20px 0;
 }
 
-.breadcrumbs nav ol {
+.breadcrumbs nav ol,
+.breadcrumbs nav ol li a {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -136,6 +137,7 @@ section {
   font-size: 16px;
   font-weight: 600;
   color: var(--color-default);
+  font-family: var(--font-primary);
 }
 
 .breadcrumbs nav ol a {
@@ -2251,6 +2253,27 @@ section {
   transform: scale(1.1);
 }
 
+.gallery .gallery-btn {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 48px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-top: 40px;
+  background-color: var(--color-secondary);
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.gallery .gallery-btn:hover {
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-secondary);
+  color: var(--color-secondary);
+}
+
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
@@ -2368,6 +2391,7 @@ section {
   padding: 0;
   margin: 20px 0 0 0;
   color: var(--color-default);
+  font-family: var(--font-primary);
 }
 
 .blog .blog-details .content {
@@ -2530,6 +2554,24 @@ section {
   font-style: italic;
   color: rgba(108, 117, 125, 0.8);
   margin-bottom: 0;
+}
+
+.blog .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.blog .content ul li {
+  padding: 0 0 10px 30px;
+  position: relative;
+}
+
+.blog .content ul i {
+  position: absolute;
+  font-size: 20px;
+  left: 0;
+  top: -3px;
+  color: var(--color-secondary);
 }
 
 /*--------------------------------------------------------------
