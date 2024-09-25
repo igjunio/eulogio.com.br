@@ -1137,7 +1137,7 @@ section {
 
 .portfolio .portfolio-flters li:hover,
 .portfolio .portfolio-flters li.filter-active {
-  color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 .portfolio .portfolio-flters li:first-child {
@@ -1715,7 +1715,7 @@ section {
   margin-bottom: 0;
 }
 
-.recent-posts .blog-btn {
+.recent-posts .blog-btn{
   font-family: var(--font-primary);
   font-weight: 500;
   font-size: 16px;
@@ -1730,7 +1730,7 @@ section {
   color: var(--color-primary);
 }
 
-.recent-posts .blog-btn:hover {
+.recent-posts .blog-btn:hover{
   background-color: var(--color-primary);
   border: 2px solid var(--color-secondary);
   color: var(--color-secondary);
@@ -2155,8 +2155,7 @@ section {
   flex-direction: column;
   text-align: center;
   position: relative;
-  min-height: 75vh;
-  padding-top: 20px;
+  min-height: 60vh;
 }
 
 .carrosel img {
@@ -2168,10 +2167,7 @@ section {
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
-}
-
-.carrosel h2 span {
-  text-decoration: underline;
+  font-family: var(--font-terciary);
 }
 
 .carrosel p {
@@ -2187,7 +2183,7 @@ section {
 
 .carrosel .carousel-control-next-icon,
 .carrosel .carousel-control-prev-icon {
-  color: var(--color-primary);
+  color: var(--color-secondary);
   font-size: 48px;
   line-height: 1;
   width: auto;
@@ -2196,10 +2192,11 @@ section {
 
 .carrosel .btn-get-started {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
+  font-family: var(--font-primary);
   letter-spacing: 1px;
   display: inline-block;
-  padding: 12px 32px;
+  padding: 12px 48px;
   border-radius: 50px;
   transition: 0.5s;
   line-height: 1;
