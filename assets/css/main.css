@@ -2385,10 +2385,10 @@ section {
 .blog .blog-details .title {
   font-size: 28px;
   font-weight: 700;
+  font-family: var(--font-terciary);
   padding: 0;
   margin: 20px 0 0 0;
   color: var(--color-default);
-  font-family: var(--font-primary);
 }
 
 .blog .blog-details .content {
@@ -2399,6 +2399,7 @@ section {
   font-size: 22px;
   margin-top: 30px;
   font-weight: bold;
+  font-family: var(--font-terciary);
 }
 
 .blog .blog-details .content blockquote {
@@ -2417,6 +2418,7 @@ section {
   font-style: italic;
   font-weight: 500;
   font-size: 22px;
+  font-family: var(--font-quaternary);
 }
 
 .blog .blog-details .content blockquote:after {
